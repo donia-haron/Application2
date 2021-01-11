@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/photoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/player_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:text="Select Song" />
+
+        <TextView
+            android:id="@+id/player_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:padding="3dp"
+            android:progress="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark"
+                android:padding="3dp"
+                android:text="pause" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:padding="3dp"
+                android:text="play" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="3dp"
+            android:text="download" />
+        <Button
+            android:id="@+id/goomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@android:color/white"
+            android:padding="3dp"
+            android:text="Goo to Main Menu"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+    </LinearLayout>
+</ScrollView>
